@@ -44,7 +44,10 @@ As team lead, I was responsible for:
 
 ## Key Result
 
-The optimized Random Forest model increased default detection recall from 4.5% to 63.8%, significantly improving the model's ability to identify high-risk borrowers.
+- Built classification models to predict loan default risk.
+- Improved Random Forest recall from 4.5% to 63.8% using class weighting.
+- Increased F1-score from 0.084 to 0.349 after imbalance optimization.
+- Identified borrower segments with K-Means clustering, including a high-risk cluster with 20.48% default rate.
 
 ---
 
