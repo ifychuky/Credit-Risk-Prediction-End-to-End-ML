@@ -88,16 +88,24 @@ Analytical Insights
 Performed detailed data exploration to understand:
 
 - Dataset structure and feature types
+
 - Missing values
+
 - Target variable distribution
-- <img width="876" height="547" alt="image" src="https://github.com/user-attachments/assets/9dd86a85-4e91-4afa-b9cf-f873290847d2" />
-  The dataset showed imbalance between default and non-default borrowers, requiring techniques beyond accuracy-based evaluation.
+  
+-  <img width="876" height="547" alt="image" src="https://github.com/user-attachments/assets/9dd86a85-4e91-4afa-b9cf-f873290847d2" />
+The dataset showed imbalance between default and non-default borrowers, requiring techniques beyond accuracy-based evaluation.
+
 - Borrower financial characteristics
+
 -  Correlation Heatmap
-<img width="1002" height="787" alt="image" src="https://github.com/user-attachments/assets/ad7f4e30-b43b-456d-b712-99d4b6271628" />
+
+-    <img width="1002" height="787" alt="image" src="https://github.com/user-attachments/assets/ad7f4e30-b43b-456d-b712-99d4b6271628" />
 Visualizing correlations between numerical variables to identify relationships and potential predictive patterns.
+
 - Relationships between features and loan default behavior
-- <img width="1489" height="1226" alt="image" src="https://github.com/user-attachments/assets/2f4002f2-a146-4361-baa1-6f773324a9f5" />
+
+ <img width="1489" height="1226" alt="image" src="https://github.com/user-attachments/assets/2f4002f2-a146-4361-baa1-6f773324a9f5" />
 KDE Plot was used to visualise the distribution of each numerical feature across loan default categories.
 
 
