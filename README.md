@@ -95,7 +95,7 @@ Performed detailed data exploration to understand:
   
  <img width="876" height="547" alt="image" src="https://github.com/user-attachments/assets/9dd86a85-4e91-4afa-b9cf-f873290847d2" />
 
-The dataset showed imbalance between default and non-default borrowers, requiring techniques beyond accuracy-based evaluation.
+_The dataset showed imbalance between default and non-default borrowers, requiring techniques beyond accuracy-based evaluation._
 
 - Borrower financial characteristics
 
@@ -103,13 +103,13 @@ The dataset showed imbalance between default and non-default borrowers, requirin
 
  <img width="1002" height="787" alt="image" src="https://github.com/user-attachments/assets/ad7f4e30-b43b-456d-b712-99d4b6271628" />
 
-Visualizing correlations between numerical variables to identify relationships and potential predictive patterns.
+_Visualizing correlations between numerical variables to identify relationships and potential predictive patterns._
 
 - Relationships between features and loan default behavior
 
 <img width="1489" height="1226" alt="image" src="https://github.com/user-attachments/assets/2f4002f2-a146-4361-baa1-6f773324a9f5" />
 
-KDE Plot was used to visualise the distribution of each numerical feature across loan default categories.
+_KDE Plot was used to visualise the distribution of each numerical feature across loan default categories._
 
 
 Key objective:
@@ -179,7 +179,7 @@ Techniques used:
   
 <img width="700" height="470" alt="image" src="https://github.com/user-attachments/assets/8a8795b6-4c9a-4247-a934-1d01c15bb0d0" />
 
-The elbow method was used to identify an appropriate number of borrower segments.
+_The elbow method was used to identify an appropriate number of borrower segments._
 
 - Silhouette Score
   Silhouette analysis was performed to evaluate cluster cohesion and separation across different cluster values.
@@ -188,7 +188,7 @@ The elbow method was used to identify an appropriate number of borrower segments
   
 <img width="844" height="547" alt="image" src="https://github.com/user-attachments/assets/4a179f2a-a85d-4dff-8300-fa2ada79acd2" />
 
-PCA was used to reduce dimensions and visualize borrower risk groups.
+_PCA was used to reduce dimensions and visualize borrower risk groups._
 
 
 Outcome:
@@ -228,7 +228,9 @@ Model Evaluation:
 
 <img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/17565f7d-160c-4982-bd78-d16a3d2860d7" />
 
-Model evaluation showed why accuracy alone can be misleading for imbalanced datasets. Although Logistic Regression and Random Forest achieved approximately 89% accuracy, their ability to identify loan defaults was limited.
+_Model evaluation showed why accuracy alone can be misleading for imbalanced datasets._ 
+
+Although Logistic Regression and Random Forest achieved approximately 89% accuracy, their ability to identify loan defaults was limited.
 
 F1-score was prioritized because detecting potential defaulters requires balancing precision and recall. The Decision Tree model achieved the strongest F1-score (0.211), making it the preferred baseline model for identifying higher-risk applicants.
 
@@ -248,13 +250,14 @@ Confusion Matrix:
 
 <img width="1674" height="495" alt="image" src="https://github.com/user-attachments/assets/da87e354-be5a-4075-af14-ae4033e5c0c6" />
 
-Since missing potential defaulters carries financial risk, recall and false negatives were considered carefully.
+_Since missing potential defaulters carries financial risk, recall and false negatives were considered carefully._
+
 Confusion matrices were used to understand each model beyond accuracy as described below:
 
--True Negatives: correctly predicted non-defaulters
--False Positives: safe customers wrongly flagged
--False Negatives: defaulters your model missed (very important in lending)
--True Positives: correctly detected defaulters
+- True Negatives: correctly predicted non-defaulters
+- False Positives: safe customers wrongly flagged
+- False Negatives: defaulters your model missed (very important in lending)
+- True Positives: correctly detected defaulters
 
 
 ROC-AUC Curve Analysis
@@ -301,7 +304,7 @@ Since detecting high-risk borrowers was the primary business objective, addition
 
 <img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/d5d650ba-6089-4e4d-b41e-880c13056a68" />
 
-The class-weighted Random Forest improved the F1-score from **0.084 to 0.349** and increased recall from **0.045 to 0.638**, making it significantly better at identifying potential defaulters.
+_The class-weighted Random Forest improved the F1-score from **0.084 to 0.349** and increased recall from **0.045 to 0.638**, making it significantly better at identifying potential defaulters._
 
 Although overall accuracy decreased, the optimized model provided a better balance between prediction performance and business risk management.
 The RF + class_weight model is the best-performing option based on the business goal of identifying loan defaulters.
@@ -311,7 +314,7 @@ The RF + class_weight model is the best-performing option based on the business 
 
 Beyond predicting loan default, I applied unsupervised machine learning to identify borrower segments with different risk profiles.
 
-K-Means clustering was used to group customers based on similar characteristics, and each cluster was analyzed by its observed default behavior.
+K-Means clustering was used to group customers based on similar characteristics, and each cluster was analyzed by its observed default behavior as shown below:
 
 <img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/7bf02617-4011-45de-a6ea-213f4bf40c1b" />
 
