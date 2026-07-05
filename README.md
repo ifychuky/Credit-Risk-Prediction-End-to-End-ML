@@ -42,7 +42,7 @@ As team lead, I was responsible for:
 - Implementing imbalance handling strategies
 - Translating model results into business recommendations
 
-- ## Key Result
+## Key Result
 
 The optimized Random Forest model increased default detection recall from 4.5% to 63.8%, significantly improving the model's ability to identify high-risk borrowers.
 
@@ -93,19 +93,22 @@ Performed detailed data exploration to understand:
 
 - Target variable distribution
   
--  <img width="876" height="547" alt="image" src="https://github.com/user-attachments/assets/9dd86a85-4e91-4afa-b9cf-f873290847d2" />
+ <img width="876" height="547" alt="image" src="https://github.com/user-attachments/assets/9dd86a85-4e91-4afa-b9cf-f873290847d2" />
+
 The dataset showed imbalance between default and non-default borrowers, requiring techniques beyond accuracy-based evaluation.
 
 - Borrower financial characteristics
 
 -  Correlation Heatmap
 
--    <img width="1002" height="787" alt="image" src="https://github.com/user-attachments/assets/ad7f4e30-b43b-456d-b712-99d4b6271628" />
+ <img width="1002" height="787" alt="image" src="https://github.com/user-attachments/assets/ad7f4e30-b43b-456d-b712-99d4b6271628" />
+
 Visualizing correlations between numerical variables to identify relationships and potential predictive patterns.
 
 - Relationships between features and loan default behavior
 
- <img width="1489" height="1226" alt="image" src="https://github.com/user-attachments/assets/2f4002f2-a146-4361-baa1-6f773324a9f5" />
+<img width="1489" height="1226" alt="image" src="https://github.com/user-attachments/assets/2f4002f2-a146-4361-baa1-6f773324a9f5" />
+
 KDE Plot was used to visualise the distribution of each numerical feature across loan default categories.
 
 
@@ -174,7 +177,8 @@ Techniques used:
 
 - Elbow Method
   
- <img width="700" height="470" alt="image" src="https://github.com/user-attachments/assets/8a8795b6-4c9a-4247-a934-1d01c15bb0d0" />
+<img width="700" height="470" alt="image" src="https://github.com/user-attachments/assets/8a8795b6-4c9a-4247-a934-1d01c15bb0d0" />
+
 The elbow method was used to identify an appropriate number of borrower segments.
 
 - Silhouette Score
@@ -182,7 +186,8 @@ The elbow method was used to identify an appropriate number of borrower segments
   
 - PCA Visualization
   
-  <img width="844" height="547" alt="image" src="https://github.com/user-attachments/assets/4a179f2a-a85d-4dff-8300-fa2ada79acd2" />
+<img width="844" height="547" alt="image" src="https://github.com/user-attachments/assets/4a179f2a-a85d-4dff-8300-fa2ada79acd2" />
+
 PCA was used to reduce dimensions and visualize borrower risk groups.
 
 
@@ -222,6 +227,7 @@ Models were compared using:
 Model Evaluation:  
 
 <img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/17565f7d-160c-4982-bd78-d16a3d2860d7" />
+
 Model evaluation showed why accuracy alone can be misleading for imbalanced datasets. Although Logistic Regression and Random Forest achieved approximately 89% accuracy, their ability to identify loan defaults was limited.
 
 F1-score was prioritized because detecting potential defaulters requires balancing precision and recall. The Decision Tree model achieved the strongest F1-score (0.211), making it the preferred baseline model for identifying higher-risk applicants.
@@ -308,7 +314,6 @@ Beyond predicting loan default, I applied unsupervised machine learning to ident
 K-Means clustering was used to group customers based on similar characteristics, and each cluster was analyzed by its observed default behavior.
 
 <img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/7bf02617-4011-45de-a6ea-213f4bf40c1b" />
-
 
 Key Insights:
 
