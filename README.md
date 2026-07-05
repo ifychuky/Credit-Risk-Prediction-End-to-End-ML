@@ -1,4 +1,4 @@
-# Credit-Risk-Prediction-End-to-End-ML
+# Credit-Risk-Prediction-End-to-End-ML (Capstone Project)
 End-to-end machine learning pipeline for predicting loan default risk using clustering, classification models, and imbalance handling techniques.
 
 ## 🔄 Project Workflow
@@ -187,3 +187,13 @@ Future versions of this project can include:
 - Deployment through Streamlit or FastAPI
 - Real-time loan risk scoring system
 - Application of similar risk prediction methods to healthcare datasets
+
+---
+
+## Personal Reflection
+
+As the team lead, this project strengthened my understanding that successful machine learning is not only about building accurate models, but about making decisions that solve real-world problems.
+
+My biggest learning was balancing technical performance with practical impact, especially when dealing with imbalanced data where the minority outcome carries significant importance.
+
+This project represents an important step in my machine learning journey as I continue developing deeper expertise, with a long-term interest in applying predictive analytics and AI to healthcare challenges.
